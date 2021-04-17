@@ -15,7 +15,7 @@ class Reduce extends CI_Controller {
         $this->load->library('upload',$config);
         if($this->upload->do_upload("the_file"))
         {
-        $data = array('fileName' => $this->upload->data());
+        $data = array('filename' => $this->upload->data());
         echo $data;
         }
         else{
